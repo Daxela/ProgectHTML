@@ -37,3 +37,5 @@ class PageExpandSerializer(serializers.ModelSerializer):
     class Meta:
         model = Page
         fields = '__all__'
+
+

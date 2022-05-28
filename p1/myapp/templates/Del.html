@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>Website</title>
+	<link rel="stylesheet" href="{% static 'css\style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<div class="navigation">
+		<div class="nav-menu">
+			<ul class="menu">
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/" class="nav-link">Главная страница</a></li>
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/request/" class="nav-link">Запрос</a></li>
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/history/" class="nav-link">История запросов</a></li>
+			</ul>
+		</div>
+		<div class="search-block">
+			<div class="searsh">
+				<input type="text" class="search-form" placeholder="Поиск">
+				<a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-information">
+		<fieldset>
+		<table>
+		  <tr>
+			  <th>Тип информации</th>
+			  <th>Информация</th>
+		  </tr>
+		  <tr>
+			  <td>{{ a1.0 }}</td>
+			  <td>{{ a1.1 }}</td>
+		  </tr>
+		  <tr>
+			  <td>{{ a2.0 }}</td>
+			  <td>{{ a2.1 }}</td>
+		  </tr>
+			<tr>
+        		<td>{{ a3.0 }}</td>
+				<td>{{ a3.1 }}</td>
+    		</tr>
+			<tr>
+        		<td>{{ a4.0 }}</td>
+				<td>{{ a4.1 }}</td>
+    		</tr>
+			<tr>
+        		<td>{{ a5.0 }}</td>
+				<td>{{ a5.1 }}</td>
+    		</tr>
+			<tr>
+        		<td>{{ a6.0 }}</td>
+				<td>{{ a6.1 }}</td>
+    		</tr>
+			<tr>
+			  <td>{{ a7.0 }}</td>
+			  <td>{{ a7.1 }}</td>
+		  </tr>
+		  <tr>
+			  <td>{{ a8.0 }}</td>
+			  <td>{{ a8.1 }}</td>
+		  </tr>
+			<tr>
+        		<td>{{ a9.0 }}</td>
+				<td>{{ a9.1 }}</td>
+    		</tr>
+			<tr>
+        		<td>{{ a10.0 }}</td>
+				<td>{{ a10.1 }}</td>
+    		</tr>
+		</table>
+			</fieldset>
+	</div>
+</body>
+</html>

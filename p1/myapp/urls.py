@@ -1,6 +1,7 @@
 
 from django.urls import path, include
 from . import views
+from . import frontviews
 from rest_framework import routers
 
 #router = routers.DefaultRouter()
@@ -15,7 +16,12 @@ urlpatterns = [
     path('request/<int:request_id>/', views.Request_d.as_view()),
     path('content/', views.Content_l.as_view()),
     path('content/<int:content_id>/', views.Content_d.as_view()),
-    path('work/page/', views.osno.as_view())
+    path('main/request/work/<int:request_id>/', views.Main1.as_view()),
+    path('main/request/deletedinf/<int:request_id>/', views.Del.as_view()),
+    path('main/request/work/', views.Main.as_view()),
+    path('main/', frontviews.main),
+    path('main/request/', frontviews.req),
+    path('main/history/', frontviews.history)
     #path('app/', include(router.urls)),
 ]
 

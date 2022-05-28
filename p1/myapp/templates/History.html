@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>Website</title>
+	<link rel="stylesheet" href="{% static 'css\style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<div class="navigation">
+		<div class="nav-menu">
+			<ul class="menu">
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/" class="nav-link">Главная страница</a></li>
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/request/" class="nav-link">Запрос</a></li>
+				<li class="nav-item"><a href="http://127.0.0.1:8000/myapp/main/history/" class="nav-link">История запросов</a></li>
+			</ul>
+		</div>
+		<div class="search-block">
+			<div class="searsh">
+				<input type="text" class="search-form" placeholder="Поиск">
+				<a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-information">
+		<fieldset>
+		<table>
+		  <tr>
+			  <th>№</th>
+			  <th>Адрес страницы</th>
+			  <th>Имя сайта</th>
+			  <th>Дата запроса</th>
+		  </tr>
+		  <tr>
+			  <td><a href="http://127.0.0.1:8000/myapp/main/request/work/1" class="nav-link">{{ a1.0 }}</a></td>
+			  <td>{{ a1.1 }}</td>
+			  <td>{{ a1.2 }}</td>
+			  <td>{{ a1.3 }}</td>
+		  </tr>
+		  <tr>
+			  <td><a href="http://127.0.0.1:8000/myapp/main/request/work/15" class="nav-link">{{ a2.0 }}</a></td>
+			  <td>{{ a2.1 }}</td>
+			  <td>{{ a2.2 }}</td>
+			  <td>{{ a2.3 }}</td>
+		  </tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/16" class="nav-link">{{ a3.0 }}</a></td>
+				<td>{{ a3.1 }}</td>
+				<td>{{ a3.2 }}</td>
+				<td>{{ a3.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/17" class="nav-link">{{ a4.0 }}</a></td>
+				<td>{{ a4.1 }}</td>
+				<td>{{ a4.2 }}</td>
+				<td>{{ a4.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/18" class="nav-link">{{ a5.0 }}</a></td>
+				<td>{{ a5.1 }}</td>
+				<td>{{ a5.2 }}</td>
+				<td>{{ a5.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/13" class="nav-link">{{ a6.0 }}</a></td>
+				<td>{{ a6.1 }}</td>
+				<td>{{ a6.2 }}</td>
+				<td>{{ a6.3 }}</td>
+    		</tr>
+			<tr>
+			  <td><a href="http://127.0.0.1:8000/myapp/main/request/work/7" class="nav-link">{{ a7.0 }}</a></td>
+			  <td>{{ a7.1 }}</td>
+			  <td>{{ a7.2 }}</td>
+			  <td>{{ a7.3 }}</td>
+		  </tr>
+		  <tr>
+			  <td><a href="http://127.0.0.1:8000/myapp/main/request/work/8" class="nav-link">{{ a8.0 }}</a></td>
+			  <td>{{ a8.1 }}</td>
+			  <td>{{ a8.2 }}</td>
+			  <td>{{ a8.3 }}</td>
+		  </tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/9" class="nav-link">{{ a9.0 }}</a></td>
+				<td>{{ a9.1 }}</td>
+				<td>{{ a9.2 }}</td>
+				<td>{{ a9.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/10" class="nav-link">{{ a10.0 }}</a></td>
+				<td>{{ a10.1 }}</td>
+				<td>{{ a10.2 }}</td>
+				<td>{{ a10.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/11" class="nav-link">{{ a11.0 }}</a></td>
+				<td>{{ a11.1 }}</td>
+				<td>{{ a11.2 }}</td>
+				<td>{{ a11.3 }}</td>
+    		</tr>
+			<tr>
+        		<td><a href="http://127.0.0.1:8000/myapp/main/request/work/12" class="nav-link">{{ a12.0 }}</a></td>
+				<td>{{ a12.1 }}</td>
+				<td>{{ a12.2 }}</td>
+				<td>{{ a12.3 }}</td>
+    		</tr>
+		</table>
+			</fieldset>
+	</div>
+</body>
+</html>

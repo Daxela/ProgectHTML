@@ -26,7 +26,7 @@ class Page(models.Model):
 class Request(models.Model):
     request_id = models.AutoField(primary_key=True, db_column="id")
     request_page_id = models.ForeignKey('Page', on_delete=models.CASCADE, db_column="page_id")
-    request_datetime = models.DateTimeField(auto_now=True, db_column="datetime"),
+    request_datetime = models.DateTimeField(auto_now=True, db_column="datetime")
     request_html_content = models.TextField(db_column="htmlcontent")
 
     class Meta:
@@ -37,7 +37,7 @@ class Request(models.Model):
 class Content(models.Model):
     content_id = models.AutoField(primary_key=True, db_column="id")
     content_request_id = models.ForeignKey('Request', on_delete=models.CASCADE, db_column="request_id")
-    content_type = models.TextField(db_column="type"),
+    content_type = models.TextField(db_column="type")
     content_content = models.TextField(db_column="content")
 
     class Meta:
